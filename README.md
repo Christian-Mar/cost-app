@@ -14,5 +14,7 @@
 3. Functionele opzet form en tonen van de data
 4. Koppeling aan faunaDB - Opzetten faunaDB
 
-
+```js
+npm install react-router-dom@6
+```
 
