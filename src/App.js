@@ -7,11 +7,10 @@ import './App.css';
 
 function App() {
   
-  const [totalCosts, setTotalCosts] = useState(0);
 
   return (
 		<div className='App'>
-      <Header totalCosts={totalCosts} />
+      <Header />
 			<Routes>
 				<Route path='/' element={<Costs />} />
 				<Route path='/:costdetail' element={<CostDetail />} />

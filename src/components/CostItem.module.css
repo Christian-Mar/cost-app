@@ -1,0 +1,22 @@
+.costItem {
+  display: flex;
+  justify-content: flex-end;
+}
+.description {
+  margin-right: 1rem;
+}
+.price {
+  margin-right: 1rem;
+}
+
+.date {
+  margin-right: 1rem;
+}
+
+
+button {
+  color: white; 
+  background-color: black;
+  border-radius: 5px;
+  margin-right: 4rem;
+}
