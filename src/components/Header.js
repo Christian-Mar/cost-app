@@ -2,9 +2,9 @@ import styles from './Header.module.css';
 
 const Header = ({totalCosts}) => {
   return (
-    <header>
-      <h1>Cost App</h1>
-      <div className={styles.total}>€ {totalCosts}</div>
+    <header className={styles.header}>
+      <h3>Kosten</h3>
+      <div className={styles.total}><h3>Totaal: € {totalCosts}</h3></div>
     </header>
   )
 }

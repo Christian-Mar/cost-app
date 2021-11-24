@@ -3,7 +3,7 @@
 
 ## Concept
 
-- Opzet van een hoofpagina waarop de kosten kunnen ingegeven worden via een form, die daaronder getoond worden
+- Opzet van een hoofpagina waarop de kosten kunnen ingegeven worden via een form component
 - Aan elke kost wordt een button gelinkt om in detail te gaan 
 - Op de detailpagina kan de kost aangepast worden of gedelete worden, of kan er extra info toegevoegd worden
 
