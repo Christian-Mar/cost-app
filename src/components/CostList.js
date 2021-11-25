@@ -3,7 +3,7 @@ import CostItem from './CostItem';
 
 const CostList = ({cost, setCost}) => {
   const removeCost = i => {
-    let temp = cost.filter((v, index) => index != i);
+    let temp = cost.filter((index) => index !== i);
     setCost(temp);
   }
 

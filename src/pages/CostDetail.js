@@ -1,4 +1,4 @@
-import styles from './CostDetail.module.css';
+//import styles from './CostDetail.module.css';
 
 const Costdetail = () => {
   return (

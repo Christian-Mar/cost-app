@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import styles from './Costs.module.css';
+import { useState } from 'react';
+//import styles from './Costs.module.css';
 import CostForm from '../components/CostForm';
 import CostList from '../components/CostList';
 
@@ -14,4 +14,10 @@ const Costs = () => {
 }
 
 export default Costs
-//{cost.length > 0 ? cost[0].description : ''}
+/*
+Costs is de main page met twee componenten: 
+1. de form
+2. de lijst met aangemaakte kosten
+
+Hier geven we de state mee van de cost die doorgegeven wordt via props naar de componenten
+*/

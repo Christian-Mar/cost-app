@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import uniqid from 'uniqid';
 import styles from './CostForm.module.css';
 
 
@@ -14,6 +15,7 @@ const CostForm = ({ cost, setCost }) => {
     let newD = new Date(d[0], d[1] - 1, d[2]);
 
     setCost([...cost, {
+      "id": uniqid(),
       "description": description.current.value,
       "price": price.current.value, 
       "time": newD.getTime()
@@ -50,3 +52,8 @@ const CostForm = ({ cost, setCost }) => {
 };
 
 export default CostForm;
+
+/* We brengen cost en setCost binnen als props. De bedoeling van de form is dat deze state aangemaakt wordt. Om 'cost' aan te maken halen we via useRef de data uit de inputvelden met een input submit en een onSubmut op de form. 
+Hier wordt de cost gevormdd via setCost met de data uit de form en een unique id die automatisch aangemaakt wordt via een npm package (npm install unique id)
+In de submit-functie (AddCost) zorgen we er voor dat alle velden weer leeggemaakt worden na de submit.  
+*/

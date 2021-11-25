@@ -1,10 +1,18 @@
 .costItem {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
+
+.id {
+  margin-right: 1rem;
+  font-style: italic;
+}
+
 .description {
   margin-right: 1rem;
 }
+
 .price {
   margin-right: 1rem;
 }
@@ -15,8 +23,10 @@
 
 
 button {
-  color: white; 
+  color: #dcfaf7; 
+  font-weight: 600;
   background-color: black;
   border-radius: 5px;
   margin-right: 4rem;
 }
+

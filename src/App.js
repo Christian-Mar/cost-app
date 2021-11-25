@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Costs from './pages/Costs';
 import CostDetail from './pages/CostDetail';
@@ -20,3 +19,7 @@ function App() {
 }
 
 export default App;
+
+/*
+Opzetten van routes met 'Costs' als hoofdpagina en 'Costdetail' als dynamische route naar de details van iedere kost
+*/ 
