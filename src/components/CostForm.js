@@ -18,7 +18,7 @@ const CostForm = ({ cost, setCost }) => {
       "id": uniqid(),
       "description": description.current.value,
       "price": price.current.value, 
-      "time": newD.getTime()
+      "time": newD.getTime(),
     }]);
     description.current.value="";
     price.current.value=null;
@@ -32,7 +32,7 @@ const CostForm = ({ cost, setCost }) => {
 					type='text'
 					name='costName'
 					id='costName'
-					placeholder='Kledij'
+					placeholder='Kost'
 					className={styles.costName}
           ref={description}
 				/>

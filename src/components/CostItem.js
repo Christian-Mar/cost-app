@@ -1,10 +1,10 @@
 import styles from './CostItem.module.css';
 import { useNavigate } from 'react-router-dom';
 
-const CostItem = ({ cost, index, removeCost}) => {
+const CostItem = ({ cost, removeCost}) => {
 
   let navigate = useNavigate();
-  let detailHandler = () => { navigate('/:costdetail') }
+  let detailHandler = () => { navigate(`/${cost.id}`) }
 
 
   let date = new Date (cost.time);
@@ -21,10 +21,10 @@ const CostItem = ({ cost, index, removeCost}) => {
 			<div className={styles.id}>{cost.id}</div>
 			<div className={styles.description}>{cost.description}</div>
 			<div className={styles.price}> € {cost.price}</div>
-			<div className={styles.date}>{day + '/' + month + '/' + year}</div>
+			<div className={styles.date}>{day + '-' + month + '-' + year}</div>
 			<button
 				className={styles.removeItem}
-				onClick={() => removeHandler(index)}
+				onClick={() => removeHandler(cost.id)}
 			>
 				x
 			</button>

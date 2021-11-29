@@ -2,9 +2,9 @@ import styles from './CostList.module.css';
 import CostItem from './CostItem';
 
 const CostList = ({cost, setCost}) => {
-  const removeCost = i => {
-    let temp = cost.filter((index) => index !== i);
-    setCost(temp);
+  const removeCost = id => {
+    let newList = cost.filter((index) => index.id !== id);
+    setCost(newList);
   }
 
   const sortByDate = (a, b) => {
@@ -12,10 +12,10 @@ const CostList = ({cost, setCost}) => {
   }
 
   return (
-    <div className={styles.costList}>
+    <div  className={styles.costList}>
       {
-        cost.sort(sortByDate).map((value, index) => (
-          <CostItem key={index} cost={value} index={index} removeCost={removeCost} />
+        cost.sort(sortByDate).map((value) => (
+          <CostItem key={value.id} cost={value} removeCost={removeCost} />
         ))
       }
     </div>

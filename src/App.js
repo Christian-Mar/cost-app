@@ -1,18 +1,19 @@
 import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Header from './components/Header';
 import Costs from './pages/Costs';
 import CostDetail from './pages/CostDetail';
 import './App.css';
 
 function App() {
-  
+  const [cost, setCost] = useState([]);
 
   return (
 		<div className='App'>
       <Header />
 			<Routes>
-				<Route path='/' element={<Costs />} />
-				<Route path='/:costdetail' element={<CostDetail />} />
+				<Route path='/' element={<Costs cost={cost} setCost={setCost}/>} />
+				<Route path='/:costdetail' element={<CostDetail cost={cost} setCost={setCost}/>} />
 			</Routes>
 		</div>
 	);
